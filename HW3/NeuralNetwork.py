@@ -69,8 +69,8 @@ class NeuralNetwork():
         for i in range(len(target)):
             if loss == 'MSE':
                 old_delta = list(map(lambda x:(x[0]-x[1])*(1-x[0])*x[0], zip(self.outputMatrix[i][-1],target[i])))
-            else:
-                old_delta = list(map(lambda x: 1/(1+math.exp(-x[0]))-x[1], zip(self.outputMatrix[i][-1], target[i])))
+            else:   #CE dE/db = sigmod(z)-target
+                old_delta = list(map(lambda x: (1/(1+math.exp(-x[0])))-x[1], zip(self.outputMatrix[i][-1], target[i])))
             delta.append([old_delta])
             for j in range(len(self.outputMatrix[i])-2,-1,-1):
                 new_delta = []

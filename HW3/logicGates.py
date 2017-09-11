@@ -1,5 +1,5 @@
 from NeuralNetwork import NeuralNetwork
-import torch
+
 
 class AND():
     x_in = 0
@@ -18,10 +18,19 @@ class AND():
         return True if res[0]>0.5 else False
 
     def train(self):
-        for i in range(10):
-            self.net.forward([[True,True],[False,False],[True,False],[False,True]])
-            self.net.backward([[1],[0],[0],[0]],'MSE')
-            self.net.updateParams(0.05)
+        for i in range(1000):
+            self.net.forward([True,True])
+            self.net.backward([True and True],'MSE')
+            self.net.updateParams(0.5)
+            self.net.forward([True, False])
+            self.net.backward([True and False], 'MSE')
+            self.net.updateParams(0.5)
+            self.net.forward([False, True])
+            self.net.backward([False and True], 'MSE')
+            self.net.updateParams(0.5)
+            self.net.forward([False, False])
+            self.net.backward([False and False], 'MSE')
+            self.net.updateParams(0.5)
 
 
 
@@ -44,11 +53,19 @@ class OR():
         res = self.net.forward([self.x_in,self.y_in])
         return True if res[0] > 0.5 else False
     def train(self):
-        for i in range (10):
-            self.net.backward([self.x_in or self.y_in],'CE')
+        for i in range(1000):
+            self.net.forward([True,True])
+            self.net.backward([True or True],'MSE')
             self.net.updateParams(0.5)
-            self.net.forward([self.x_in, self.y_in])
-        self.forward()
+            self.net.forward([True, False])
+            self.net.backward([True or False], 'MSE')
+            self.net.updateParams(0.5)
+            self.net.forward([False, True])
+            self.net.backward([False or True], 'MSE')
+            self.net.updateParams(0.5)
+            self.net.forward([False, False])
+            self.net.backward([False or False], 'MSE')
+            self.net.updateParams(0.5)
 
 
 class NOT():
@@ -67,11 +84,14 @@ class NOT():
         return True if res[0] > 0.5 else False
 
     def train(self):
-        for i in range (10):
-            self.net.backward([not(self.x_in)],'CE')
+        for i in range (1000):
+            self.net.forward([True])
+            self.net.backward([not True],'MSE')
             self.net.updateParams(0.5)
-            self.net.forward([self.x_in])
-        self.forward()
+            self.net.forward([False])
+            self.net.backward([not False], 'MSE')
+            self.net.updateParams(0.5)
+
 
 class XOR():
     x_in = 0
@@ -95,34 +115,36 @@ class XOR():
 
     def train(self):
         self.and_gate.train()
-        self.and_gate(True,True)
-        self.and_gate.train()
-        self.and_gate(True, False)
-        self.and_gate.train()
-        self.and_gate(False, True)
-        print(self.and_gate.net.thetaMatrix)
         self.or_gate.train()
-        self.or_gate(True,True)
-        self.or_gate.train()
-        self.or_gate(True, False)
-        self.or_gate.train()
-        self.or_gate(False, True)
-        print(self.or_gate.net.thetaMatrix)
-        self.not_gate.train()
-        self.not_gate(True)
         self.not_gate.train()
 
 
-def printMatrix(theta):
-    print(str(theta[0][0][0])+ ' '+str(theta[0][0][1]) + ' '+str(theta[0][0][2])+ ' ' +str(theta[0][0][0]-theta[0][0][1]-theta[0][0][2]))
-
+'''
 And = AND()
-And(True,True)
 And.train()
-printMatrix(And.net.thetaMatrix)
+print(And(True,True))
+print(And(True,False))
+print(And(False,True))
+print(And(False,False))
 
+Or = OR()
+Or.train()
+print(Or(True,True))
+print(Or(True,False))
+print(Or(False,True))
+print(Or(False,False))
 
-
+Not = NOT()
+Not.train()
+print(Not(True))
+print(Not(False))
+'''
+Xor = XOR()
+Xor.train()
+print(Xor(False,True))
+print(Xor(False,False))
+print(Xor(True,False))
+print(Xor(True,True))
 
 
 
