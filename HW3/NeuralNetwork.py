@@ -8,6 +8,9 @@ class NeuralNetwork():
     outputMatrix = []
     def __init__(self,inputSize): #input+hiddenlayer+ output size
         self.thetaMatrix = []
+        self.dE_dTheta = []
+
+        self.outputMatrix = []
 
         for i in range(len(inputSize)-1):
             self.thetaMatrix.append([])
@@ -19,6 +22,8 @@ class NeuralNetwork():
         return self.thetaMatrix[layer]#get theta layer
 
     def forward(self,input):
+        self.outputMatrix = []
+
         if not isinstance(input[0],list): #check if 1d input or 2d input: test whether the 1st input is a list
             input = [input]
         return_result = []
@@ -34,7 +39,6 @@ class NeuralNetwork():
                     temp = 0
                     for k in range (len(self.thetaMatrix[i][j])):
                         temp += (self.thetaMatrix[i][j][k]*h_old_temp[k])
-                    print(temp)
                     temp = 1/(1+math.exp(-temp))    #sigmod the result
                     h_new_temp.append(temp)
 
@@ -46,17 +50,27 @@ class NeuralNetwork():
             return_result.append(h_new_temp)
 
             self.outputMatrix[m].insert(0,input[m])
-            #print(self.outputMatrix)
+            #print(return_result)
         return return_result if len(return_result)>1 else return_result[0]
 
 
     def backward(self,target,loss):
         delta = [] #δ
 
+        for j in range(len(self.thetaMatrix)):
+
+            for k in range(len(self.thetaMatrix[j])):
+
+                for l in range(len(self.thetaMatrix[j][k])):
+                    self.dE_dTheta[j][k][l] = 0
+
         if not isinstance(target[0],list):
             target = [target]
         for i in range(len(target)):
-            old_delta = list(map(lambda x:(x[0]-x[1])*(1-x[0])*x[0], zip(self.outputMatrix[i][-1],target[i])))
+            if loss == 'MSE':
+                old_delta = list(map(lambda x:(x[0]-x[1])*(1-x[0])*x[0], zip(self.outputMatrix[i][-1],target[i])))
+            else:
+                old_delta = list(map(lambda x: 1/(1+math.exp(-x[0]))-x[1], zip(self.outputMatrix[i][-1], target[i])))
             delta.append([old_delta])
             for j in range(len(self.outputMatrix[i])-2,-1,-1):
                 new_delta = []
@@ -69,33 +83,16 @@ class NeuralNetwork():
                     new_delta.append(temp)
                 delta[i].insert(0,list(map(lambda x: x[0]*(1-x[0])*x[1], zip(list(self.outputMatrix[i][j]),new_delta))))
                 old_delta = new_delta
-
-
-            print(delta)
-            print("--------------------------")
-
             outputMatrix2 = self.outputMatrix[:]
             for j in range(len(outputMatrix2)):
                 for k in range(len(outputMatrix2[j])-1):
                     outputMatrix2[j][k].insert(0,1)
-            print(self.outputMatrix)
             for j in range(len(self.thetaMatrix)):
 
                 for k in range(len(self.thetaMatrix[j])):
 
                     for l in range(len(self.thetaMatrix[j][k])):
                         self.dE_dTheta[j][k][l]+=(delta[i][j+1][k]*self.outputMatrix[i][j][l])
-                        print( self.dE_dTheta[j][k][l])
-
-
-
-
-
-        if loss == 'MSE':
-            return
-
-        return
-
 
 
     def updateParams(self,eta):
@@ -104,12 +101,9 @@ class NeuralNetwork():
             for j in range(len(self.thetaMatrix[i])):
                 for k in range(len(self.thetaMatrix[i][j])):
                     self.thetaMatrix[i][j][k] -= eta/len(self.outputMatrix)*self.dE_dTheta[i][j][k]
-                    print(self.thetaMatrix[i][j][k])
 
 
-
-
-
+'''
 a = NeuralNetwork([2,2,2])
 
 a.thetaMatrix[0][0][0] = 0.3500000
@@ -131,5 +125,6 @@ a.forward([0.05,0.10])
 a.backward([0.01,0.99],'MSE')
 a.updateParams(0.5)
 
+'''
 
 
