@@ -54,7 +54,7 @@ class NeuralNetwork():
         return return_result if len(return_result)>1 else return_result[0]
 
 
-    def backward(self,target,loss):
+    def backward(self,target,loss='MSE'):
         delta = [] #δ
 
         for j in range(len(self.thetaMatrix)):

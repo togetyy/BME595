@@ -138,7 +138,7 @@ Not = NOT()
 Not.train()
 print(Not(True))
 print(Not(False))
-'''
+
 Xor = XOR()
 Xor.train()
 print(Xor(False,True))
@@ -147,6 +147,6 @@ print(Xor(True,False))
 print(Xor(True,True))
 
 
-
+'''
 
 
