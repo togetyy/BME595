@@ -5,10 +5,12 @@ import torch.utils.data as Data
 import torchvision
 
 
+
 #torch.manual_seed(1)
 
 
-
+validaterate = []
+trainrate = []
 
 
 class NnImg2Num(nn.Module):
@@ -37,9 +39,10 @@ class NnImg2Num(nn.Module):
         return out
 
     def train(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=0.01)  # optimize all cnn parameters
+        optimizer = torch.optim.SGD(self.parameters(), lr=0.05)  # optimize all cnn parameters
         loss_func = nn.CrossEntropyLoss()  # the target label is not one-hotted
         for epoch in range(1):#EPOCH = 1
+
             for step,(x,y) in enumerate(self.train_loader):
                 b_x = Variable(x)
                 b_y = Variable(y)
@@ -49,21 +52,74 @@ class NnImg2Num(nn.Module):
                 loss.backward()
                 optimizer.step()
 
+            print("epoch = ", epoch)
+            base = 0
+            point = 0
+            for step,(x,y) in enumerate(self.train_loader):
+                base += 50
+                b_x = Variable(x)
+                b_y = Variable(y)
+                output = self.forward(b_x)
+                pred_y = torch.max(output, 1)[1].data.tolist()
+                truey = b_y.data.tolist()
+                for i in range(50):
+                    point += (1 if pred_y[i] == truey[i] else 0)
+            trainrate.append(point/base)
+            print("train rate = ",point/base)
+            point = 0
+            base = 1000
+            test_data = torchvision.datasets.MNIST(root='./dataset/', train=False)
+            test_x = Variable(torch.unsqueeze(test_data.test_data, dim=1), volatile=True).type(torch.FloatTensor)[
+                     :2000] / 255.  # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
+            test_y = test_data.test_labels[:2000]
+            test_output = cnn.forward(test_x[:1000])
+            pred_y = torch.max(test_output, 1)[1].data.tolist()
+            truey = test_y.tolist()
+            for i in range(1000):
+                point += (1 if pred_y[i] == truey[i] else 0)
+            # print(test_output)
+            validaterate.append(point/base)
+            print("validate rate = ",point/base)
+            print("------------------------")
+
+        print(trainrate)
+        print(validaterate)
+
+
+
+
+
+
+
 
 
 
 cnn = NnImg2Num()
 cnn.train()
-
+'''
 test_data = torchvision.datasets.MNIST(root='./dataset/', train=False)
 test_x = Variable(torch.unsqueeze(test_data.test_data, dim=1), volatile=True).type(torch.FloatTensor)[:2000]/255.   # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
-test_y = test_data.test_labels[:2000]
-
+test_y = test_data.test_labels[1000:2000]
 test_output = cnn.forward(test_x[:10])
+#print(test_output)
 pred_y = torch.max(test_output, 1)[1].data.numpy().squeeze()
 print(pred_y, 'prediction number')
 print(test_y[:10].numpy(), 'real number')
+'''
 
+point = 0
+base = 1000
+test_data = torchvision.datasets.MNIST(root='./dataset/', train=False)
+test_x = Variable(torch.unsqueeze(test_data.test_data, dim=1), volatile=True).type(torch.FloatTensor)[
+         1000:2000] / 255.  # shape from (2000, 28, 28) to (2000, 1, 28, 28), value in range(0,1)
+test_y = test_data.test_labels[1000:2000]
+test_output = cnn.forward(test_x[:1000])
+pred_y = torch.max(test_output, 1)[1].data.tolist()
+truey = test_y.tolist()
+for i in range(1000):
+    point += (1 if pred_y[i] == truey[i] else 0)
+
+print(point/base)
 
 '''
 optimizer = torch.optim.Adam(cnn.parameters(), lr=LR)   # optimize all cnn parameters

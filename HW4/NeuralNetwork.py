@@ -120,11 +120,9 @@ a.thetaMatrix[1][1][0] = 0.6000000
 a.thetaMatrix[1][1][1] = 0.5000000
 a.thetaMatrix[1][1][2] = 0.5500000
 #print(a.thetaMatrix)
-a.forward([0.05,0.10])
-#print(a.outputMatrix)
-a.backward([0.01,0.99],'MSE')
+a.forward([[0.05, 0.10],[0.02, 0.20]])
+print(a.outputMatrix)
+a.backward([[0.01, 0.99],[0.02, 0.98]],'MSE')
 a.updateParams(0.5)
-
 '''
-
 
