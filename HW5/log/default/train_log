@@ -1,0 +1,335 @@
+Building CIFAR-100 data loader with 1 workers
+Train Epoch: 0 [20000/50000] Loss: 0.360785 Acc: 0.8750 lr: 1.00e-03
+Train Epoch: 0 [40000/50000] Loss: 0.329781 Acc: 0.8950 lr: 1.00e-03
+Elapsed 361.02s, 361.02 s/epoch, 1.44 s/batch, ets 35740.70s
+	Test set: Average loss: 1.7150, Accuracy: 6379/10000 (64%)
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-0.pth
+Train Epoch: 1 [20000/50000] Loss: 0.221720 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 1 [40000/50000] Loss: 0.335786 Acc: 0.8950 lr: 1.00e-03
+Elapsed 757.67s, 378.84 s/epoch, 1.52 s/batch, ets 37125.94s
+Train Epoch: 2 [20000/50000] Loss: 0.349963 Acc: 0.9050 lr: 1.00e-03
+Train Epoch: 2 [40000/50000] Loss: 0.276540 Acc: 0.9100 lr: 1.00e-03
+Elapsed 1125.07s, 375.02 s/epoch, 1.50 s/batch, ets 36377.36s
+Train Epoch: 3 [20000/50000] Loss: 0.290638 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 3 [40000/50000] Loss: 0.261413 Acc: 0.9100 lr: 1.00e-03
+Elapsed 1492.86s, 373.21 s/epoch, 1.49 s/batch, ets 35828.58s
+Train Epoch: 4 [20000/50000] Loss: 0.222108 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 4 [40000/50000] Loss: 0.296175 Acc: 0.9300 lr: 1.00e-03
+Elapsed 1861.20s, 372.24 s/epoch, 1.49 s/batch, ets 35362.78s
+Train Epoch: 5 [20000/50000] Loss: 0.274752 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 5 [40000/50000] Loss: 0.328532 Acc: 0.8850 lr: 1.00e-03
+Elapsed 2233.11s, 372.19 s/epoch, 1.49 s/batch, ets 34985.42s
+	Test set: Average loss: 1.7400, Accuracy: 6345/10000 (63%)
+Train Epoch: 6 [20000/50000] Loss: 0.283983 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 6 [40000/50000] Loss: 0.245444 Acc: 0.9300 lr: 1.00e-03
+Elapsed 2639.96s, 377.14 s/epoch, 1.51 s/batch, ets 35073.81s
+Train Epoch: 7 [20000/50000] Loss: 0.180528 Acc: 0.9450 lr: 1.00e-03
+Train Epoch: 7 [40000/50000] Loss: 0.285066 Acc: 0.9200 lr: 1.00e-03
+Elapsed 3010.62s, 376.33 s/epoch, 1.51 s/batch, ets 34622.17s
+Train Epoch: 8 [20000/50000] Loss: 0.287444 Acc: 0.9100 lr: 1.00e-03
+Train Epoch: 8 [40000/50000] Loss: 0.350099 Acc: 0.8800 lr: 1.00e-03
+Elapsed 3368.24s, 374.25 s/epoch, 1.50 s/batch, ets 34056.68s
+Train Epoch: 9 [20000/50000] Loss: 0.331295 Acc: 0.8950 lr: 1.00e-03
+Train Epoch: 9 [40000/50000] Loss: 0.303459 Acc: 0.8850 lr: 1.00e-03
+Elapsed 3726.88s, 372.69 s/epoch, 1.49 s/batch, ets 33541.96s
+Train Epoch: 10 [20000/50000] Loss: 0.303685 Acc: 0.9100 lr: 1.00e-03
+Train Epoch: 10 [40000/50000] Loss: 0.385647 Acc: 0.8600 lr: 1.00e-03
+Elapsed 4084.57s, 371.32 s/epoch, 1.49 s/batch, ets 33047.91s
+	Test set: Average loss: 1.7393, Accuracy: 6367/10000 (64%)
+Train Epoch: 11 [20000/50000] Loss: 0.252735 Acc: 0.9050 lr: 1.00e-03
+Train Epoch: 11 [40000/50000] Loss: 0.288961 Acc: 0.9000 lr: 1.00e-03
+Elapsed 4471.22s, 372.60 s/epoch, 1.49 s/batch, ets 32788.94s
+Train Epoch: 12 [20000/50000] Loss: 0.307238 Acc: 0.8850 lr: 1.00e-03
+Train Epoch: 12 [40000/50000] Loss: 0.250117 Acc: 0.8900 lr: 1.00e-03
+Elapsed 4830.28s, 371.56 s/epoch, 1.49 s/batch, ets 32325.74s
+Train Epoch: 13 [20000/50000] Loss: 0.232149 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 13 [40000/50000] Loss: 0.220138 Acc: 0.9200 lr: 1.00e-03
+Elapsed 5188.24s, 370.59 s/epoch, 1.48 s/batch, ets 31870.64s
+Train Epoch: 14 [20000/50000] Loss: 0.235920 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 14 [40000/50000] Loss: 0.198965 Acc: 0.9500 lr: 1.00e-03
+Elapsed 5546.21s, 369.75 s/epoch, 1.48 s/batch, ets 31428.50s
+Train Epoch: 15 [20000/50000] Loss: 0.293940 Acc: 0.9050 lr: 1.00e-03
+Train Epoch: 15 [40000/50000] Loss: 0.288301 Acc: 0.8850 lr: 1.00e-03
+Elapsed 5903.98s, 369.00 s/epoch, 1.48 s/batch, ets 30995.88s
+	Test set: Average loss: 1.8013, Accuracy: 6343/10000 (63%)
+Train Epoch: 16 [20000/50000] Loss: 0.181098 Acc: 0.9450 lr: 1.00e-03
+Train Epoch: 16 [40000/50000] Loss: 0.244250 Acc: 0.9200 lr: 1.00e-03
+Elapsed 6290.52s, 370.03 s/epoch, 1.48 s/batch, ets 30712.55s
+Train Epoch: 17 [20000/50000] Loss: 0.358016 Acc: 0.8800 lr: 1.00e-03
+Train Epoch: 17 [40000/50000] Loss: 0.240053 Acc: 0.9150 lr: 1.00e-03
+Elapsed 6650.13s, 369.45 s/epoch, 1.48 s/batch, ets 30295.05s
+Train Epoch: 18 [20000/50000] Loss: 0.213521 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 18 [40000/50000] Loss: 0.376213 Acc: 0.9000 lr: 1.00e-03
+Elapsed 7008.51s, 368.87 s/epoch, 1.48 s/batch, ets 29878.38s
+Train Epoch: 19 [20000/50000] Loss: 0.200903 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 19 [40000/50000] Loss: 0.330465 Acc: 0.8800 lr: 1.00e-03
+Elapsed 7367.37s, 368.37 s/epoch, 1.47 s/batch, ets 29469.48s
+Train Epoch: 20 [20000/50000] Loss: 0.264950 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 20 [40000/50000] Loss: 0.272767 Acc: 0.9250 lr: 1.00e-03
+Elapsed 7725.08s, 367.86 s/epoch, 1.47 s/batch, ets 29061.00s
+	Test set: Average loss: 1.7877, Accuracy: 6341/10000 (63%)
+Train Epoch: 21 [20000/50000] Loss: 0.233841 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 21 [40000/50000] Loss: 0.289990 Acc: 0.9100 lr: 1.00e-03
+Elapsed 8112.61s, 368.75 s/epoch, 1.48 s/batch, ets 28762.89s
+Train Epoch: 22 [20000/50000] Loss: 0.191795 Acc: 0.9450 lr: 1.00e-03
+Train Epoch: 22 [40000/50000] Loss: 0.243765 Acc: 0.9050 lr: 1.00e-03
+Elapsed 8470.57s, 368.29 s/epoch, 1.47 s/batch, ets 28358.01s
+Train Epoch: 23 [20000/50000] Loss: 0.263174 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 23 [40000/50000] Loss: 0.260399 Acc: 0.9200 lr: 1.00e-03
+Elapsed 8829.21s, 367.88 s/epoch, 1.47 s/batch, ets 27959.17s
+Train Epoch: 24 [20000/50000] Loss: 0.340868 Acc: 0.9150 lr: 1.00e-03
+Train Epoch: 24 [40000/50000] Loss: 0.236199 Acc: 0.9200 lr: 1.00e-03
+Elapsed 9187.75s, 367.51 s/epoch, 1.47 s/batch, ets 27563.25s
+Train Epoch: 25 [20000/50000] Loss: 0.227800 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 25 [40000/50000] Loss: 0.240883 Acc: 0.9300 lr: 1.00e-03
+Elapsed 9545.55s, 367.14 s/epoch, 1.47 s/batch, ets 27168.11s
+	Test set: Average loss: 1.8023, Accuracy: 6382/10000 (64%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-0.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-25.pth
+Train Epoch: 26 [20000/50000] Loss: 0.330790 Acc: 0.8850 lr: 1.00e-03
+Train Epoch: 26 [40000/50000] Loss: 0.289486 Acc: 0.8850 lr: 1.00e-03
+Elapsed 9933.41s, 367.90 s/epoch, 1.47 s/batch, ets 26857.01s
+Train Epoch: 27 [20000/50000] Loss: 0.205042 Acc: 0.9150 lr: 1.00e-03
+Train Epoch: 27 [40000/50000] Loss: 0.316313 Acc: 0.8850 lr: 1.00e-03
+Elapsed 10291.72s, 367.56 s/epoch, 1.47 s/batch, ets 26464.42s
+Train Epoch: 28 [20000/50000] Loss: 0.212531 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 28 [40000/50000] Loss: 0.283527 Acc: 0.9050 lr: 1.00e-03
+Elapsed 10649.94s, 367.24 s/epoch, 1.47 s/batch, ets 26074.00s
+Train Epoch: 29 [20000/50000] Loss: 0.228737 Acc: 0.9450 lr: 1.00e-03
+Train Epoch: 29 [40000/50000] Loss: 0.246530 Acc: 0.9250 lr: 1.00e-03
+Elapsed 11008.10s, 366.94 s/epoch, 1.47 s/batch, ets 25685.57s
+Train Epoch: 30 [20000/50000] Loss: 0.202374 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 30 [40000/50000] Loss: 0.272896 Acc: 0.9400 lr: 1.00e-03
+Elapsed 11366.17s, 366.65 s/epoch, 1.47 s/batch, ets 25298.89s
+	Test set: Average loss: 1.8302, Accuracy: 6386/10000 (64%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-25.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-30.pth
+Train Epoch: 31 [20000/50000] Loss: 0.228819 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 31 [40000/50000] Loss: 0.253196 Acc: 0.9250 lr: 1.00e-03
+Elapsed 11753.33s, 367.29 s/epoch, 1.47 s/batch, ets 24975.84s
+Train Epoch: 32 [20000/50000] Loss: 0.279943 Acc: 0.9150 lr: 1.00e-03
+Train Epoch: 32 [40000/50000] Loss: 0.231655 Acc: 0.9200 lr: 1.00e-03
+Elapsed 12111.83s, 367.03 s/epoch, 1.47 s/batch, ets 24590.68s
+Train Epoch: 33 [20000/50000] Loss: 0.249085 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 33 [40000/50000] Loss: 0.217910 Acc: 0.9350 lr: 1.00e-03
+Elapsed 12469.57s, 366.75 s/epoch, 1.47 s/batch, ets 24205.63s
+Train Epoch: 34 [20000/50000] Loss: 0.255868 Acc: 0.9100 lr: 1.00e-03
+Train Epoch: 34 [40000/50000] Loss: 0.208134 Acc: 0.9500 lr: 1.00e-03
+Elapsed 12827.81s, 366.51 s/epoch, 1.47 s/batch, ets 23823.07s
+Train Epoch: 35 [20000/50000] Loss: 0.215033 Acc: 0.9250 lr: 1.00e-03
+Train Epoch: 35 [40000/50000] Loss: 0.229698 Acc: 0.9300 lr: 1.00e-03
+Elapsed 13185.89s, 366.27 s/epoch, 1.47 s/batch, ets 23441.59s
+	Test set: Average loss: 1.8895, Accuracy: 6319/10000 (63%)
+Train Epoch: 36 [20000/50000] Loss: 0.290542 Acc: 0.9100 lr: 1.00e-03
+Train Epoch: 36 [40000/50000] Loss: 0.294393 Acc: 0.9050 lr: 1.00e-03
+Elapsed 13573.36s, 366.85 s/epoch, 1.47 s/batch, ets 23111.40s
+Train Epoch: 37 [20000/50000] Loss: 0.171642 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 37 [40000/50000] Loss: 0.220117 Acc: 0.9450 lr: 1.00e-03
+Elapsed 13930.93s, 366.60 s/epoch, 1.47 s/batch, ets 22729.42s
+Train Epoch: 38 [20000/50000] Loss: 0.253832 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 38 [40000/50000] Loss: 0.208566 Acc: 0.9300 lr: 1.00e-03
+Elapsed 14289.51s, 366.40 s/epoch, 1.47 s/batch, ets 22350.26s
+Train Epoch: 39 [20000/50000] Loss: 0.300263 Acc: 0.9050 lr: 1.00e-03
+Train Epoch: 39 [40000/50000] Loss: 0.307673 Acc: 0.8900 lr: 1.00e-03
+Elapsed 14646.98s, 366.17 s/epoch, 1.46 s/batch, ets 21970.47s
+Train Epoch: 40 [20000/50000] Loss: 0.206751 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 40 [40000/50000] Loss: 0.219134 Acc: 0.9400 lr: 1.00e-03
+Elapsed 15005.19s, 365.98 s/epoch, 1.46 s/batch, ets 21592.83s
+	Test set: Average loss: 1.8818, Accuracy: 6353/10000 (64%)
+Train Epoch: 41 [20000/50000] Loss: 0.176015 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 41 [40000/50000] Loss: 0.271210 Acc: 0.8950 lr: 1.00e-03
+Elapsed 15392.24s, 366.48 s/epoch, 1.47 s/batch, ets 21255.96s
+Train Epoch: 42 [20000/50000] Loss: 0.168299 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 42 [40000/50000] Loss: 0.281250 Acc: 0.9250 lr: 1.00e-03
+Elapsed 15750.80s, 366.30 s/epoch, 1.47 s/batch, ets 20878.97s
+Train Epoch: 43 [20000/50000] Loss: 0.242369 Acc: 0.9100 lr: 1.00e-03
+Train Epoch: 43 [40000/50000] Loss: 0.249469 Acc: 0.9350 lr: 1.00e-03
+Elapsed 16108.78s, 366.11 s/epoch, 1.46 s/batch, ets 20502.08s
+Train Epoch: 44 [20000/50000] Loss: 0.274692 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 44 [40000/50000] Loss: 0.213380 Acc: 0.9450 lr: 1.00e-03
+Elapsed 16466.46s, 365.92 s/epoch, 1.46 s/batch, ets 20125.68s
+Train Epoch: 45 [20000/50000] Loss: 0.172393 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 45 [40000/50000] Loss: 0.290791 Acc: 0.8850 lr: 1.00e-03
+Elapsed 16824.55s, 365.75 s/epoch, 1.46 s/batch, ets 19750.56s
+	Test set: Average loss: 1.8924, Accuracy: 6368/10000 (64%)
+Train Epoch: 46 [20000/50000] Loss: 0.257460 Acc: 0.8950 lr: 1.00e-03
+Train Epoch: 46 [40000/50000] Loss: 0.268175 Acc: 0.9300 lr: 1.00e-03
+Elapsed 17211.85s, 366.21 s/epoch, 1.46 s/batch, ets 19409.10s
+Train Epoch: 47 [20000/50000] Loss: 0.159365 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 47 [40000/50000] Loss: 0.210543 Acc: 0.9100 lr: 1.00e-03
+Elapsed 17569.35s, 366.03 s/epoch, 1.46 s/batch, ets 19033.47s
+Train Epoch: 48 [20000/50000] Loss: 0.240062 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 48 [40000/50000] Loss: 0.250018 Acc: 0.9300 lr: 1.00e-03
+Elapsed 17926.91s, 365.86 s/epoch, 1.46 s/batch, ets 18658.62s
+Train Epoch: 49 [20000/50000] Loss: 0.189876 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 49 [40000/50000] Loss: 0.182264 Acc: 0.9450 lr: 1.00e-03
+Elapsed 18285.11s, 365.70 s/epoch, 1.46 s/batch, ets 18285.11s
+Train Epoch: 50 [20000/50000] Loss: 0.197394 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 50 [40000/50000] Loss: 0.209722 Acc: 0.9300 lr: 1.00e-03
+Elapsed 18642.92s, 365.55 s/epoch, 1.46 s/batch, ets 17911.82s
+	Test set: Average loss: 1.8395, Accuracy: 6381/10000 (64%)
+Train Epoch: 51 [20000/50000] Loss: 0.203352 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 51 [40000/50000] Loss: 0.217262 Acc: 0.9300 lr: 1.00e-03
+Elapsed 19030.05s, 365.96 s/epoch, 1.46 s/batch, ets 17566.20s
+Train Epoch: 52 [20000/50000] Loss: 0.216251 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 52 [40000/50000] Loss: 0.269917 Acc: 0.9000 lr: 1.00e-03
+Elapsed 19387.82s, 365.81 s/epoch, 1.46 s/batch, ets 17192.98s
+Train Epoch: 53 [20000/50000] Loss: 0.181626 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 53 [40000/50000] Loss: 0.227799 Acc: 0.9300 lr: 1.00e-03
+Elapsed 19744.99s, 365.65 s/epoch, 1.46 s/batch, ets 16819.80s
+Train Epoch: 54 [20000/50000] Loss: 0.211276 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 54 [40000/50000] Loss: 0.201864 Acc: 0.9250 lr: 1.00e-03
+Elapsed 20103.34s, 365.52 s/epoch, 1.46 s/batch, ets 16448.19s
+Train Epoch: 55 [20000/50000] Loss: 0.240954 Acc: 0.9250 lr: 1.00e-03
+Train Epoch: 55 [40000/50000] Loss: 0.185546 Acc: 0.9200 lr: 1.00e-03
+Elapsed 20461.76s, 365.39 s/epoch, 1.46 s/batch, ets 16077.10s
+	Test set: Average loss: 1.8943, Accuracy: 6388/10000 (64%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-30.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-55.pth
+Train Epoch: 56 [20000/50000] Loss: 0.122367 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 56 [40000/50000] Loss: 0.315339 Acc: 0.9000 lr: 1.00e-03
+Elapsed 20849.63s, 365.78 s/epoch, 1.46 s/batch, ets 15728.67s
+Train Epoch: 57 [20000/50000] Loss: 0.228521 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 57 [40000/50000] Loss: 0.217045 Acc: 0.9250 lr: 1.00e-03
+Elapsed 21207.34s, 365.64 s/epoch, 1.46 s/batch, ets 15357.04s
+Train Epoch: 58 [20000/50000] Loss: 0.265228 Acc: 0.9000 lr: 1.00e-03
+Train Epoch: 58 [40000/50000] Loss: 0.133948 Acc: 0.9700 lr: 1.00e-03
+Elapsed 21565.61s, 365.52 s/epoch, 1.46 s/batch, ets 14986.27s
+Train Epoch: 59 [20000/50000] Loss: 0.183716 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 59 [40000/50000] Loss: 0.208145 Acc: 0.9350 lr: 1.00e-03
+Elapsed 21923.55s, 365.39 s/epoch, 1.46 s/batch, ets 14615.70s
+Train Epoch: 60 [20000/50000] Loss: 0.144139 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 60 [40000/50000] Loss: 0.183085 Acc: 0.9450 lr: 1.00e-03
+Elapsed 22281.65s, 365.27 s/epoch, 1.46 s/batch, ets 14245.65s
+	Test set: Average loss: 1.9166, Accuracy: 6353/10000 (64%)
+Train Epoch: 61 [20000/50000] Loss: 0.176177 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 61 [40000/50000] Loss: 0.224144 Acc: 0.9250 lr: 1.00e-03
+Elapsed 22669.73s, 365.64 s/epoch, 1.46 s/batch, ets 13894.35s
+Train Epoch: 62 [20000/50000] Loss: 0.224872 Acc: 0.9200 lr: 1.00e-03
+Train Epoch: 62 [40000/50000] Loss: 0.313173 Acc: 0.8950 lr: 1.00e-03
+Elapsed 23027.88s, 365.52 s/epoch, 1.46 s/batch, ets 13524.31s
+Train Epoch: 63 [20000/50000] Loss: 0.242595 Acc: 0.8950 lr: 1.00e-03
+Train Epoch: 63 [40000/50000] Loss: 0.290456 Acc: 0.9150 lr: 1.00e-03
+Elapsed 23385.22s, 365.39 s/epoch, 1.46 s/batch, ets 13154.19s
+Train Epoch: 64 [20000/50000] Loss: 0.169539 Acc: 0.9650 lr: 1.00e-03
+Train Epoch: 64 [40000/50000] Loss: 0.273318 Acc: 0.9100 lr: 1.00e-03
+Elapsed 23743.76s, 365.29 s/epoch, 1.46 s/batch, ets 12785.10s
+Train Epoch: 65 [20000/50000] Loss: 0.189821 Acc: 0.9300 lr: 1.00e-03
+Train Epoch: 65 [40000/50000] Loss: 0.200506 Acc: 0.9350 lr: 1.00e-03
+Elapsed 24102.02s, 365.18 s/epoch, 1.46 s/batch, ets 12416.19s
+	Test set: Average loss: 1.9476, Accuracy: 6380/10000 (64%)
+Train Epoch: 66 [20000/50000] Loss: 0.157055 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 66 [40000/50000] Loss: 0.260859 Acc: 0.9050 lr: 1.00e-03
+Elapsed 24489.27s, 365.51 s/epoch, 1.46 s/batch, ets 12061.88s
+Train Epoch: 67 [20000/50000] Loss: 0.156543 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 67 [40000/50000] Loss: 0.123749 Acc: 0.9650 lr: 1.00e-03
+Elapsed 24846.78s, 365.39 s/epoch, 1.46 s/batch, ets 11692.60s
+Train Epoch: 68 [20000/50000] Loss: 0.195811 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 68 [40000/50000] Loss: 0.138995 Acc: 0.9600 lr: 1.00e-03
+Elapsed 25203.45s, 365.27 s/epoch, 1.46 s/batch, ets 11323.29s
+Train Epoch: 69 [20000/50000] Loss: 0.117255 Acc: 0.9500 lr: 1.00e-03
+Train Epoch: 69 [40000/50000] Loss: 0.150463 Acc: 0.9500 lr: 1.00e-03
+Elapsed 25559.86s, 365.14 s/epoch, 1.46 s/batch, ets 10954.23s
+Train Epoch: 70 [20000/50000] Loss: 0.196773 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 70 [40000/50000] Loss: 0.148952 Acc: 0.9550 lr: 1.00e-03
+Elapsed 25917.31s, 365.03 s/epoch, 1.46 s/batch, ets 10585.94s
+	Test set: Average loss: 1.9453, Accuracy: 6373/10000 (64%)
+Train Epoch: 71 [20000/50000] Loss: 0.194296 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 71 [40000/50000] Loss: 0.173465 Acc: 0.9450 lr: 1.00e-03
+Elapsed 26304.26s, 365.34 s/epoch, 1.46 s/batch, ets 10229.43s
+Train Epoch: 72 [20000/50000] Loss: 0.158048 Acc: 0.9250 lr: 1.00e-03
+Train Epoch: 72 [40000/50000] Loss: 0.276032 Acc: 0.9200 lr: 1.00e-03
+Elapsed 26661.23s, 365.22 s/epoch, 1.46 s/batch, ets 9861.00s
+Train Epoch: 73 [20000/50000] Loss: 0.150332 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 73 [40000/50000] Loss: 0.202425 Acc: 0.9300 lr: 1.00e-03
+Elapsed 27018.81s, 365.12 s/epoch, 1.46 s/batch, ets 9493.10s
+Train Epoch: 74 [20000/50000] Loss: 0.150383 Acc: 0.9550 lr: 1.00e-03
+Train Epoch: 74 [40000/50000] Loss: 0.141047 Acc: 0.9650 lr: 1.00e-03
+Elapsed 27376.11s, 365.01 s/epoch, 1.46 s/batch, ets 9125.37s
+Train Epoch: 75 [20000/50000] Loss: 0.156074 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 75 [40000/50000] Loss: 0.215664 Acc: 0.9250 lr: 1.00e-03
+Elapsed 27733.97s, 364.92 s/epoch, 1.46 s/batch, ets 8758.10s
+	Test set: Average loss: 1.9731, Accuracy: 6360/10000 (64%)
+Train Epoch: 76 [20000/50000] Loss: 0.169288 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 76 [40000/50000] Loss: 0.132796 Acc: 0.9600 lr: 1.00e-03
+Elapsed 28120.72s, 365.20 s/epoch, 1.46 s/batch, ets 8399.70s
+Train Epoch: 77 [20000/50000] Loss: 0.229165 Acc: 0.9350 lr: 1.00e-03
+Train Epoch: 77 [40000/50000] Loss: 0.211594 Acc: 0.9250 lr: 1.00e-03
+Elapsed 28478.26s, 365.11 s/epoch, 1.46 s/batch, ets 8032.33s
+Train Epoch: 78 [20000/50000] Loss: 0.161706 Acc: 0.9400 lr: 1.00e-03
+Train Epoch: 78 [40000/50000] Loss: 0.187808 Acc: 0.9400 lr: 1.00e-03
+Elapsed 28834.98s, 365.00 s/epoch, 1.46 s/batch, ets 7665.00s
+Train Epoch: 79 [20000/50000] Loss: 0.165583 Acc: 0.9450 lr: 1.00e-03
+Train Epoch: 79 [40000/50000] Loss: 0.159876 Acc: 0.9450 lr: 1.00e-03
+Elapsed 29192.54s, 364.91 s/epoch, 1.46 s/batch, ets 7298.13s
+Train Epoch: 80 [20000/50000] Loss: 0.111643 Acc: 0.9500 lr: 1.00e-04
+Train Epoch: 80 [40000/50000] Loss: 0.146411 Acc: 0.9500 lr: 1.00e-04
+Elapsed 29549.71s, 364.81 s/epoch, 1.46 s/batch, ets 6931.41s
+	Test set: Average loss: 1.8716, Accuracy: 6541/10000 (65%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-55.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-80.pth
+Train Epoch: 81 [20000/50000] Loss: 0.177133 Acc: 0.9250 lr: 1.00e-04
+Train Epoch: 81 [40000/50000] Loss: 0.097261 Acc: 0.9750 lr: 1.00e-04
+Elapsed 29936.91s, 365.08 s/epoch, 1.46 s/batch, ets 6571.52s
+Train Epoch: 82 [20000/50000] Loss: 0.100764 Acc: 0.9600 lr: 1.00e-04
+Train Epoch: 82 [40000/50000] Loss: 0.111624 Acc: 0.9750 lr: 1.00e-04
+Elapsed 30293.94s, 364.99 s/epoch, 1.46 s/batch, ets 6204.78s
+Train Epoch: 83 [20000/50000] Loss: 0.076015 Acc: 0.9800 lr: 1.00e-04
+Train Epoch: 83 [40000/50000] Loss: 0.115241 Acc: 0.9500 lr: 1.00e-04
+Elapsed 30651.22s, 364.90 s/epoch, 1.46 s/batch, ets 5838.33s
+Train Epoch: 84 [20000/50000] Loss: 0.066460 Acc: 0.9950 lr: 1.00e-04
+Train Epoch: 84 [40000/50000] Loss: 0.113466 Acc: 0.9700 lr: 1.00e-04
+Elapsed 31007.84s, 364.80 s/epoch, 1.46 s/batch, ets 5471.97s
+Train Epoch: 85 [20000/50000] Loss: 0.082505 Acc: 0.9700 lr: 1.00e-04
+Train Epoch: 85 [40000/50000] Loss: 0.059452 Acc: 0.9850 lr: 1.00e-04
+Elapsed 31365.34s, 364.71 s/epoch, 1.46 s/batch, ets 5105.99s
+	Test set: Average loss: 1.8382, Accuracy: 6561/10000 (66%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-80.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-85.pth
+Train Epoch: 86 [20000/50000] Loss: 0.081568 Acc: 0.9750 lr: 1.00e-04
+Train Epoch: 86 [40000/50000] Loss: 0.104861 Acc: 0.9700 lr: 1.00e-04
+Elapsed 31752.24s, 364.97 s/epoch, 1.46 s/batch, ets 4744.59s
+Train Epoch: 87 [20000/50000] Loss: 0.109931 Acc: 0.9650 lr: 1.00e-04
+Train Epoch: 87 [40000/50000] Loss: 0.069107 Acc: 0.9800 lr: 1.00e-04
+Elapsed 32109.52s, 364.88 s/epoch, 1.46 s/batch, ets 4378.57s
+Train Epoch: 88 [20000/50000] Loss: 0.096119 Acc: 0.9800 lr: 1.00e-04
+Train Epoch: 88 [40000/50000] Loss: 0.079726 Acc: 0.9750 lr: 1.00e-04
+Elapsed 32466.88s, 364.80 s/epoch, 1.46 s/batch, ets 4012.76s
+Train Epoch: 89 [20000/50000] Loss: 0.086164 Acc: 0.9750 lr: 1.00e-04
+Train Epoch: 89 [40000/50000] Loss: 0.078894 Acc: 0.9700 lr: 1.00e-04
+Elapsed 32824.52s, 364.72 s/epoch, 1.46 s/batch, ets 3647.17s
+Train Epoch: 90 [20000/50000] Loss: 0.073540 Acc: 0.9800 lr: 1.00e-04
+Train Epoch: 90 [40000/50000] Loss: 0.119779 Acc: 0.9750 lr: 1.00e-04
+Elapsed 33181.62s, 364.63 s/epoch, 1.46 s/batch, ets 3281.70s
+	Test set: Average loss: 1.8552, Accuracy: 6569/10000 (66%)
+Removing old model /home/cheng/PycharmProjects/BME595/HW5/log/default/best-85.pth
+Saving model to /home/cheng/PycharmProjects/BME595/HW5/log/default/best-90.pth
+Train Epoch: 91 [20000/50000] Loss: 0.056639 Acc: 0.9900 lr: 1.00e-04
+Train Epoch: 91 [40000/50000] Loss: 0.081259 Acc: 0.9850 lr: 1.00e-04
+Elapsed 33568.44s, 364.87 s/epoch, 1.46 s/batch, ets 2918.99s
+Train Epoch: 92 [20000/50000] Loss: 0.092022 Acc: 0.9900 lr: 1.00e-04
+Train Epoch: 92 [40000/50000] Loss: 0.142576 Acc: 0.9600 lr: 1.00e-04
+Elapsed 33925.75s, 364.79 s/epoch, 1.46 s/batch, ets 2553.55s
+Train Epoch: 93 [20000/50000] Loss: 0.070796 Acc: 0.9850 lr: 1.00e-04
+Train Epoch: 93 [40000/50000] Loss: 0.105932 Acc: 0.9650 lr: 1.00e-04
+Elapsed 34282.34s, 364.71 s/epoch, 1.46 s/batch, ets 2188.23s
+Train Epoch: 94 [20000/50000] Loss: 0.118545 Acc: 0.9700 lr: 1.00e-04
+Train Epoch: 94 [40000/50000] Loss: 0.075816 Acc: 0.9850 lr: 1.00e-04
+Elapsed 34640.12s, 364.63 s/epoch, 1.46 s/batch, ets 1823.16s
+Train Epoch: 95 [20000/50000] Loss: 0.041107 Acc: 0.9900 lr: 1.00e-04
+Train Epoch: 95 [40000/50000] Loss: 0.098146 Acc: 0.9700 lr: 1.00e-04
+Elapsed 34997.92s, 364.56 s/epoch, 1.46 s/batch, ets 1458.25s
+	Test set: Average loss: 1.8540, Accuracy: 6566/10000 (66%)
+Train Epoch: 96 [20000/50000] Loss: 0.068187 Acc: 0.9950 lr: 1.00e-04
+Train Epoch: 96 [40000/50000] Loss: 0.060807 Acc: 0.9900 lr: 1.00e-04
+Elapsed 35385.03s, 364.79 s/epoch, 1.46 s/batch, ets 1094.38s
+Train Epoch: 97 [20000/50000] Loss: 0.106483 Acc: 0.9750 lr: 1.00e-04
+Train Epoch: 97 [40000/50000] Loss: 0.100241 Acc: 0.9750 lr: 1.00e-04
+Elapsed 35741.95s, 364.71 s/epoch, 1.46 s/batch, ets 729.43s
+Train Epoch: 98 [20000/50000] Loss: 0.088708 Acc: 0.9700 lr: 1.00e-04
+Train Epoch: 98 [40000/50000] Loss: 0.081780 Acc: 0.9700 lr: 1.00e-04
+Elapsed 36099.15s, 364.64 s/epoch, 1.46 s/batch, ets 364.64s
+Train Epoch: 99 [20000/50000] Loss: 0.046347 Acc: 0.9950 lr: 1.00e-04
+Train Epoch: 99 [40000/50000] Loss: 0.070505 Acc: 0.9750 lr: 1.00e-04
+Elapsed 36456.69s, 364.57 s/epoch, 1.46 s/batch, ets 0.00s
+Total Elapse: 36456.69, Best Result: 65.690%
